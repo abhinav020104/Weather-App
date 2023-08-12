@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+:root {
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    color: var(--colorLight2);
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tabBar{
+    margin-top: 4rem;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+.btn{
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+
+}
+.weather-container{
+    /* max-width: 1080px;
+    max-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center; */
+    margin-block: 4rem;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.grant-location-container{
+    display:none;
+}
+.grant-location-container.active{
+    display: flex;
+}
+.grant-location-container img{
+    margin-bottom: 2rem;
+}
+
+.grant-location-container p:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+.grant-location-container p:last-of-type{
+    font: 0.85rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    text-align: center;
+    font-weight: 500;
+}
+.loading-container{
+    display: none
+}
+.loading-container.active{
+    display: flex;
+}
+.loading-container p{
+    text-transform: uppercase;
+}
+.Form-container{
+    display: none;
+}
+.Form-container.active{
+    display: flex;
+}
+
+.userInfoContainer{
+    display: none;
+}
+.userInfoContainer.active{
+    display: flex;
+}
+.locationInfo{
+    align-items: center;
+    display: flex;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+.locationInfo p{
+    color: var(--colorLight1);
+    font-size: 2rem;
+}
+
+.locationInfo img{
+    width: 30px;
+    height: 30px;
+}
+.weatherDesc{
+    font-size: 1.5rem;
+    font-weight: 200px;
+}
+.weatherIcon{
+    width: 90px;
+    height: 90px;
+}
+.temperature{
+    color: var(--colorLight2);
+    font-weight: 700;
+    font-size: 2.75rem;
+}
+.otherInfo{
+    display: flex;
+    gap: 10px 20px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.other{
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.other img{
+    width: 50px;
+    height: 50px;
+}
+.other p:first-of-type{
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.other p:last-of-type{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.Form-container{
+    display: none;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+.current-tab {
+    background-color:rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+.Form-container.active {
+    display:flex;
+}
+
+.Form-container input{
+    all: unset;
+    width:calc(100% - 80px);
+    height: 40px;
+    background-color: rgba(219, 226, 239, 0.5);
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+.Form-container input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+.Form-container input:focus{
+    outline: 3px solid var(--colorLight1);
+}
+
+.Form-container .btn{
+    padding: unset;
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-bottom: 1px;
+}
